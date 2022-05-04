@@ -8,6 +8,7 @@ using namespace std;
 class Person
 {
 private:
+    int static counter;
     string code;
     string surnames;
     string names;

@@ -81,11 +81,32 @@ void Person::setNumberChildren(unsigned short value)
 {
     numberChildren = value;
 }
+
+int Person::counter = 1;
+
+//Añadir CONFIG += c++11 en el .pro
 Person::Person()
 {
     this->salary = 0.0;
     this->numberChildren = 0;
+    this->code = "Persona - " + to_string(Person::counter);
+    Person::counter++;
 }
+
+/*Person::Person()
+{
+    this->salary = 0.0;
+    this->numberChildren = 0;
+
+    string codigo = "P";
+    char numero[10];
+    string num;
+    int valor = Person::counter++;
+    itoa(valor , numero , 10);
+    num = string(numero);
+    codigo.append(num);
+    this->code = codigo;
+}*/
 
 Person::~Person()
 {
@@ -173,7 +194,7 @@ void Person::colour(int x){
 
 void Person::readPerson(){
     system("cls");
-    position(30,5); this->code = readText("CODIGO: ");
+    //position(30,5); this->code = readText("CODIGO: ");
     position(30,6); this->names = readText("NOMBRES: ");
     position(30,7); this->surnames = readText("APELLIDOS: ");
     position(30,8); this->dateBirth = readText("FECH. NAC.: ");
