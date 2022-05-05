@@ -105,12 +105,11 @@ void PeopleList::registerPerson(){
     char answer;
         do{
             Person *person = new Person();
-            //initialisePerson(person);
             person->readPerson();
-            //insertPerson(person);
             this->insertPerson(person);
+            position(30,14);cout << "Persona Registrada con Exito";
             do{
-                position(30,14);cout << "Desea insertar otra Persona: ";
+                position(30,16);cout << "Desea insertar otra Persona?: ";
                 fflush(stdin);
                 cin.get(answer);
             }while(!(answer == 'N' || answer == 'n' || answer == 'S' || answer == 's'));
@@ -176,16 +175,20 @@ void PeopleList::searchPerson(){
 
 PersonNode *PeopleList::higherPaidPerson(){
     system("cls");
+    if(this->numberPeople == 0){
+        position(35,5); cout << "Por Favor, registre personas primero";
+        cout << endl;
+        system("pause");
+        return NULL;
+    }
     PersonNode *aux = new PersonNode();
     PersonNode *temp = new PersonNode();
-    aux = this->header;
-    double higherSalary = 0.0;
+    aux = this->header->getNext();
+    temp = this->header;
     while( aux != NULL){
-        if(aux->getPersona()->getSalary() > higherSalary){
-            higherSalary = aux->getPersona()->getSalary();
-            temp = aux;
+        if(aux->getPersona()->getSalary() > temp->getPersona()->getSalary()){
+            temp->getPersona()->setSalary(aux->getPersona()->getSalary());
         }
-
         aux = aux->getNext();
     }
     temp->getPersona()->showPerson(0);
@@ -193,3 +196,4 @@ PersonNode *PeopleList::higherPaidPerson(){
     system("pause");
     return temp;
 }
+
