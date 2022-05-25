@@ -8,6 +8,9 @@ private:
     int max;
     int numberClients;
     Client *header;
+
+    void grow();
+
 public:
     ClientList();
     ~ClientList();
@@ -20,6 +23,12 @@ public:
 
     Client *getHeader() const;
     void setHeader(Client *value);
+
+    void insert(Client *client);
+    Client *pickClient(string message);
+    Client *findClientById(string id);
+    void show(int rowNumber);
+    Car *findCarByPlate(string plate);
 };
 
 #endif // CLIENTLIST_H

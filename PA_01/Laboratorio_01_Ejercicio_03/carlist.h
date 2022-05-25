@@ -7,7 +7,6 @@ class CarList
 private:
     CarNode *header;
     int numberCars;
-    int max;
 public:
     CarList();
     ~CarList();
@@ -17,9 +16,8 @@ public:
 
     int getNumberCars() const;
     void setNumberCars(int value);
-
-    int getMax() const;
-    void setMax(int value);
+    void insert(Car *car);
+    //car *pickCar
 };
 
 #endif // CARLIST_H

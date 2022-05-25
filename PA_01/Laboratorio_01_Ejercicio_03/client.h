@@ -5,6 +5,7 @@
 class Client
 {
 private:
+    static int counter;
     string code;
     string names;
     string surnames;
@@ -19,7 +20,6 @@ public:
            bool gender);
 
     string getCode() const;
-    void setCode(const string &value);
 
     string getNames() const;
     void setNames(const string &value);
@@ -35,9 +35,11 @@ public:
 
     bool getGender() const;
     void setGender(bool value);
+    string getGenderAsString();
 
     CarList *getCars() const;
     void setCars(CarList *value);
+    void show(int rowNumber, int itemNumber);
 };
 
 #endif // CLIENT_H

@@ -1,13 +1,12 @@
 #ifndef CAR_H
 #define CAR_H
+#include <basics.h>
 
-#include <iostream>
-
-using namespace std;
 
 class Car
 {
 private:
+    static int counter;
     string code;
     string brand;
     string model;
@@ -18,8 +17,10 @@ private:
 public:
     Car();
     ~Car();
-    Car(string code, string brand, string model, float price, string plate,
-        string colour,string status);
+    Car(string brand, string model, float price, string plate,
+        string colour, string status);
+
+    //Metodos Get y Set
 
     string getCode() const;
     void setCode(const string &value);
@@ -41,6 +42,9 @@ public:
 
     string getStatus() const;
     void setStatus(const string &value);
+
+
+    void show(int rowNumber, int itemNumber);
 };
 
 #endif // CAR_H

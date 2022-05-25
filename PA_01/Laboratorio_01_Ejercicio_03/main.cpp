@@ -1,11 +1,14 @@
-#include <iostream>
-#include <clientlist.h>
-
-using namespace std;
+#include <menu.h>
 
 int main()
 {
-    cout << "Hello World!" << endl;
+    Automotive *automotive = new Automotive();
+    DataSeed::seed(automotive);
+
+    Menu *appMenu = new Menu(automotive);
+
+    appMenu->displayMenu();
+
     return 0;
 }
 
