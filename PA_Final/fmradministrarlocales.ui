@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FmrAdministrarLocales</class>
+ <widget class="QDialog" name="FmrAdministrarLocales">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>859</width>
+    <height>554</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Gestion de Locales</string>
+  </property>
+  <widget class="QLineEdit" name="txtNombre">
+   <property name="geometry">
+    <rect>
+     <x>158</x>
+     <y>30</y>
+     <width>321</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>28</x>
+     <y>30</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nombre del Local :</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdCerrar">
+   <property name="geometry">
+    <rect>
+     <x>648</x>
+     <y>510</y>
+     <width>181</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cerrar</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="twLocales">
+   <property name="geometry">
+    <rect>
+     <x>28</x>
+     <y>70</y>
+     <width>801</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>Codigo</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nombre</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Direccion</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Estado</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="cmdActualizar">
+   <property name="geometry">
+    <rect>
+     <x>218</x>
+     <y>510</y>
+     <width>181</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Actualizar Local</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdAgregarLocal">
+   <property name="geometry">
+    <rect>
+     <x>28</x>
+     <y>510</y>
+     <width>181</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Agregar Local</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdEliminar">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>510</y>
+     <width>181</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Eliminar Local</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdBuscar">
+   <property name="geometry">
+    <rect>
+     <x>488</x>
+     <y>30</y>
+     <width>181</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&amp;Buscar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdTodos">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>30</y>
+     <width>161</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Mostrar todos</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

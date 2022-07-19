@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FrmListaPacientes</class>
+ <widget class="QDialog" name="FrmListaPacientes">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>753</width>
+    <height>456</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>17</x>
+     <y>30</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nombre :</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtNombre">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>30</y>
+     <width>531</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="twPacientes">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>70</y>
+     <width>581</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>Codigo</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nombres</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Dueño</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Fecha de Nacimiento</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="cmdBuscar">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>70</y>
+     <width>121</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Buscar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdCerrar">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>380</y>
+     <width>121</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cerrar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdActualizar">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>140</y>
+     <width>121</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Actualizar</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>txtNombre</tabstop>
+  <tabstop>twPacientes</tabstop>
+  <tabstop>cmdBuscar</tabstop>
+  <tabstop>cmdActualizar</tabstop>
+  <tabstop>cmdCerrar</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
