@@ -22,6 +22,8 @@ public:
 private slots:
     void on_actionAdministrar_Locales_triggered();
 
+    void on_actionAdministrar_Enfermeras_triggered();
+
 private:
     Ui::MainWindow *ui;
     SistemaVacunacion *sistemaVacunacion;

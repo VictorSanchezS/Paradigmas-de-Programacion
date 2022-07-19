@@ -29,7 +29,14 @@
     </property>
     <addaction name="actionAdministrar_Locales"/>
    </widget>
+   <widget class="QMenu" name="menuPersonal">
+    <property name="title">
+     <string>Personal</string>
+    </property>
+    <addaction name="actionAdministrar_Enfermeras"/>
+   </widget>
    <addaction name="menuLocales"/>
+   <addaction name="menuPersonal"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -43,6 +50,11 @@
   <action name="actionAdministrar_Locales">
    <property name="text">
     <string>Administrar Locales...</string>
+   </property>
+  </action>
+  <action name="actionAdministrar_Enfermeras">
+   <property name="text">
+    <string>Administrar Enfermeras...</string>
    </property>
   </action>
  </widget>

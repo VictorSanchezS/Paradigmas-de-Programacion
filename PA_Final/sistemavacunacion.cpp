@@ -40,6 +40,16 @@ void SistemaVacunacion::setListaLocales(ListaLocalesClass *value)
 {
     listaLocales = value;
 }
+
+ListaEnfermeras *SistemaVacunacion::getListaEnfermeras() const
+{
+    return listaEnfermeras;
+}
+
+void SistemaVacunacion::setListaEnfermeras(ListaEnfermeras *value)
+{
+    listaEnfermeras = value;
+}
 SistemaVacunacion::SistemaVacunacion()
 {
     this->lider = "Jaime Bravo";

@@ -34,6 +34,8 @@ private slots:
 
     void on_cmdTodos_clicked();
 
+    void on_cmdEliminar_clicked();
+
 private:
     Ui::FmrAdministrarLocales *ui;
     ListaLocalesClass *listaLocales;

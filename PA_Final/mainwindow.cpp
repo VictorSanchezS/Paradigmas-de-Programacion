@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "fmradministrarlocales.h"
+#include "fmradministrarenfermeras.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -35,3 +36,10 @@ void MainWindow::setSistemaVacunacion(SistemaVacunacion *value)
     sistemaVacunacion = value;
 }
 
+
+void MainWindow::on_actionAdministrar_Enfermeras_triggered()
+{
+    FmrAdministrarEnfermeras *fmrAdministrarEnfermeras = new FmrAdministrarEnfermeras();
+    fmrAdministrarEnfermeras->show();
+
+}

@@ -66,6 +66,7 @@ void FmrAdministrarLocales::listadoLocales(ListaLocalesClass *listaLocales){
     aux  = listaLocales->getCab();
     int x = 0;
     while(aux != NULL){
+        //if(aux->getLocal()->getEstado() == true)
         this->mostraFila(x,aux);
         aux = aux->getSgte();
         x++;
@@ -127,4 +128,9 @@ void FmrAdministrarLocales::on_cmdActualizar_clicked()
 void FmrAdministrarLocales::on_cmdTodos_clicked()
 {
     this->listadoLocales(this->listaLocales);
+}
+
+void FmrAdministrarLocales::on_cmdEliminar_clicked()
+{
+
 }
