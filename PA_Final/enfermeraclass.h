@@ -5,6 +5,7 @@
 class EnfermeraClass : public PersonaClass
 {
 private:
+    QString codigo;
     double sueldo;
     int horasTrabajo;
 public:
@@ -14,7 +15,9 @@ public:
     void setSueldo(double value);
     int getHorasTrabajo() const;
     void setHorasTrabajo(int value);
-    EnfermeraClass(QString nombre, QString apellidos, QString dni, QString direccion, QString telefono, bool genero, QString fechaNacimiento, double sueldo, int horasTrabajo);
+    QString getCodigo() const;
+    void setCodigo(const QString &value);
+    EnfermeraClass(QString codigo, QString nombre, QString apellidos, QString dni, QString direccion, QString telefono, bool genero, QString fechaNacimiento, double sueldo, int horasTrabajo);
 };
 
 #endif // ENFERMERACLASS_H

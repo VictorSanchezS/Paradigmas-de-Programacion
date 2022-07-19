@@ -179,10 +179,18 @@
      <widget class="QDateEdit" name="deFechaNacimiento"/>
     </item>
     <item>
-     <widget class="QDoubleSpinBox" name="dsbSueldo"/>
+     <widget class="QDoubleSpinBox" name="dsbSueldo">
+      <property name="maximum">
+       <double>15000.989999999999782</double>
+      </property>
+     </widget>
     </item>
     <item>
-     <widget class="QSpinBox" name="sbHorasTrabajo"/>
+     <widget class="QSpinBox" name="sbHorasTrabajo">
+      <property name="maximum">
+       <number>180</number>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>

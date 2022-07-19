@@ -55,7 +55,7 @@ void FmrNewEnfermera::on_cmdRegistrar_clicked()
     int horasTrabajo = this->ui->sbHorasTrabajo->value();
 
     //Creacion de la nueva instancia
-    EnfermeraClass *enfermera = new EnfermeraClass(nombre,apellidos,dni,direccion,telefono,genero,fechaNacimiento,sueldo,horasTrabajo);
+    EnfermeraClass *enfermera = new EnfermeraClass(codigo,nombre,apellidos,dni,direccion,telefono,genero,fechaNacimiento,sueldo,horasTrabajo);
 
     this->listaEnfermeras->insertarEnfermera(enfermera);
 

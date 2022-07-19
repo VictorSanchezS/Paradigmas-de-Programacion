@@ -40,6 +40,8 @@ void MainWindow::setSistemaVacunacion(SistemaVacunacion *value)
 void MainWindow::on_actionAdministrar_Enfermeras_triggered()
 {
     FmrAdministrarEnfermeras *fmrAdministrarEnfermeras = new FmrAdministrarEnfermeras();
+    fmrAdministrarEnfermeras->setListaEnfermeras(this->sistemaVacunacion->getListaEnfermeras());
     fmrAdministrarEnfermeras->show();
+    fmrAdministrarEnfermeras->listadoEnfermeras(this->sistemaVacunacion->getListaEnfermeras());
 
 }

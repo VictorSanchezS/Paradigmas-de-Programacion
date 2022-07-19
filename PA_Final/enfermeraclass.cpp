@@ -20,15 +20,26 @@ void EnfermeraClass::setHorasTrabajo(int value)
 {
     horasTrabajo = value;
 }
-EnfermeraClass::EnfermeraClass()
-{
 
+QString EnfermeraClass::getCodigo() const
+{
+    return codigo;
 }
 
-EnfermeraClass::EnfermeraClass(QString nombre,QString apellidos,QString dni,QString direccion,QString telefono,
+void EnfermeraClass::setCodigo(const QString &value)
+{
+    codigo = value;
+}
+EnfermeraClass::EnfermeraClass()
+{
+    
+}
+
+EnfermeraClass::EnfermeraClass(QString codigo,QString nombre,QString apellidos,QString dni,QString direccion,QString telefono,
                                bool genero,QString fechaNacimiento,double sueldo,int horasTrabajo) :
     PersonaClass(nombre,apellidos,dni,direccion,telefono,genero,fechaNacimiento)
 {
+    this->codigo = codigo;
     this->sueldo = sueldo;
     this->horasTrabajo = horasTrabajo;
 }

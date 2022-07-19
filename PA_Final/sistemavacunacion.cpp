@@ -56,6 +56,7 @@ SistemaVacunacion::SistemaVacunacion()
     this->ruc = "343434434343";
     this->telefono = "123456789";
     this->listaLocales = new ListaLocalesClass();
+    this->listaEnfermeras = new ListaEnfermeras();
 }
 
 SistemaVacunacion::~SistemaVacunacion()
