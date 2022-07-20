@@ -14,6 +14,7 @@ public:
     void setCab(NodoEnfermeraClass *value);
     int getNumeroEnfermeras() const;
     void setNumeroEnfermeras(int value);
+    void cambiarValoresEnfermera(EnfermeraClass *enfermera);
 };
 
 #endif // LISTAENFERMERAS_H

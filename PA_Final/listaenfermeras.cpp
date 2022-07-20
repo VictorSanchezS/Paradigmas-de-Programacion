@@ -48,3 +48,16 @@ void ListaEnfermeras::insertarEnfermera(EnfermeraClass *enfermera){
     }
     this->numeroEnfermeras++;
 }
+
+void ListaEnfermeras::cambiarValoresEnfermera(EnfermeraClass *enfermera){
+    NodoEnfermeraClass *aux = new NodoEnfermeraClass();
+    aux = this->getCab();
+    while(aux != NULL){
+        if(aux->getEnfermera()->getCodigo() == enfermera->getCodigo()){
+
+            aux->setEnfermera(enfermera);
+            break;
+        }
+        aux = aux->getSgte();
+    }
+}

@@ -23,7 +23,10 @@
     </rect>
    </property>
    <property name="text">
-    <string>Nombre de enfermera:</string>
+    <string>Dni de enfermera :</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
   <widget class="QTableWidget" name="twEnfermeras">
@@ -47,12 +50,12 @@
    </column>
    <column>
     <property name="text">
-     <string>Direccion</string>
+     <string>Apellido</string>
     </property>
    </column>
    <column>
     <property name="text">
-     <string>Estado</string>
+     <string>Sueldo</string>
     </property>
    </column>
   </widget>
@@ -82,7 +85,7 @@
     <string>Actualizar Enfermera</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="txtNombre">
+  <widget class="QLineEdit" name="txtDni">
    <property name="geometry">
     <rect>
      <x>150</x>

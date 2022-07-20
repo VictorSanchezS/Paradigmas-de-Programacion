@@ -22,10 +22,17 @@ public:
 
     void mostrarFilaEnfermeras(int x, NodoEnfermeraClass *aux);
     void listadoEnfermeras(ListaEnfermeras *listaEnfermeras);
+    EnfermeraClass *selecionarEnfermera(QString codigo);
 private slots:
     void on_cmdAgregarEnfermera_clicked();
 
     void on_cmdCerrar_clicked();
+
+    void on_cmdBuscar_clicked();
+
+    void on_cmdMostrarTodos_clicked();
+
+    void on_cmdActualizarEnfermera_clicked();
 
 private:
     Ui::FmrAdministrarEnfermeras *ui;

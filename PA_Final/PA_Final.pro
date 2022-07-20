@@ -26,7 +26,8 @@ SOURCES += main.cpp\
     personaclass.cpp \
     enfermeraclass.cpp \
     nodoenfermeraclass.cpp \
-    listaenfermeras.cpp
+    listaenfermeras.cpp \
+    fmractualizarenfermera.cpp
 
 HEADERS  += mainwindow.h \
     fmradministrarlocales.h \
@@ -41,14 +42,16 @@ HEADERS  += mainwindow.h \
     personaclass.h \
     enfermeraclass.h \
     nodoenfermeraclass.h \
-    listaenfermeras.h
+    listaenfermeras.h \
+    fmractualizarenfermera.h
 
 FORMS    += mainwindow.ui \
     fmradministrarlocales.ui \
     fmrnewlocal.ui \
     fmractualizarlocal.ui \
     fmradministrarenfermeras.ui \
-    fmrnewenfermera.ui
+    fmrnewenfermera.ui \
+    fmractualizarenfermera.ui
 
 DISTFILES += \
     PA_Final.pro.user
