@@ -41,14 +41,24 @@ void LocalClass::setEstado(bool value)
 {
     estado = value;
 }
+
+bool LocalClass::getCondicion() const
+{
+    return condicion;
+}
+
+void LocalClass::setCondicion(bool value)
+{
+    condicion = value;
+}
 LocalClass::LocalClass()
 {
-
+    
 }
 
 LocalClass::~LocalClass()
 {
-
+    
 }
 
 LocalClass::LocalClass(QString codigo,QString nombre,QString direccion,bool estado)
@@ -58,6 +68,7 @@ LocalClass::LocalClass(QString codigo,QString nombre,QString direccion,bool esta
     this->nombre = nombre;
     this->direccion = direccion;
     this->estado = estado;
+    this->condicion = true;
 }
 
 

@@ -14,10 +14,10 @@ FmrAdministrarLocales::FmrAdministrarLocales(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    ui->twLocales->setColumnWidth(0,80);
-    ui->twLocales->setColumnWidth(1,220);
-    ui->twLocales->setColumnWidth(2,220);
-    ui->twLocales->setColumnWidth(3,100);
+    ui->twLocales->setColumnWidth(0,120);
+    ui->twLocales->setColumnWidth(1,250);
+    ui->twLocales->setColumnWidth(2,280);
+    ui->twLocales->setColumnWidth(3,98);
 }
 
 FmrAdministrarLocales::~FmrAdministrarLocales()
@@ -66,13 +66,13 @@ void FmrAdministrarLocales::listadoLocales(ListaLocalesClass *listaLocales){
     aux  = listaLocales->getCab();
     int x = 0;
     while(aux != NULL){
-        //if(aux->getLocal()->getEstado() == true)
-        this->mostraFila(x,aux);
+        if(aux->getLocal()->getCondicion() == true){
+            this->mostraFila(x,aux);
+        }
         aux = aux->getSgte();
         x++;
     }
 }
-
 
 void FmrAdministrarLocales::on_cmdBuscar_clicked()
 {
@@ -132,5 +132,21 @@ void FmrAdministrarLocales::on_cmdTodos_clicked()
 
 void FmrAdministrarLocales::on_cmdEliminar_clicked()
 {
+    if(ui->twLocales->currentIndex().isValid()){
+        QMessageBox::StandardButton respuestaButton;
+        respuestaButton = QMessageBox::question(this,"Eliminar Local","¿Está seguro?",QMessageBox::Yes | QMessageBox::Cancel);
+        if(respuestaButton == QMessageBox::Yes){
+            LocalClass *localEliminado = new LocalClass();
+            localEliminado = this->selecionarLocal(ui->twLocales->item(ui->twLocales->currentRow(),0)->text());
+            localEliminado->setEstado(false);
+            this->listadoLocales(this->listaLocales);
+        }
+        else{
+            return;
+        }
 
+    }
+    else{
+        QMessageBox::critical( this, "", "Debe Seleccionar un producto");
+    }
 }

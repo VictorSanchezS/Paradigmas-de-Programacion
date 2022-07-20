@@ -34,6 +34,8 @@ private slots:
 
     void on_cmdActualizarEnfermera_clicked();
 
+    void on_cmdEliminarEnfermera_clicked();
+
 private:
     Ui::FmrAdministrarEnfermeras *ui;
     ListaEnfermeras *listaEnfermeras;
