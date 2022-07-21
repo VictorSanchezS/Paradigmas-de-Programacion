@@ -26,6 +26,8 @@ private slots:
 
     void on_actionAdministrar_Doctores_triggered();
 
+    void on_actionAdministrar_Pacientes_triggered();
+
 private:
     Ui::MainWindow *ui;
     SistemaVacunacion *sistemaVacunacion;
