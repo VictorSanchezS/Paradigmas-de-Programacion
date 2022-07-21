@@ -30,16 +30,6 @@ void EnfermeraClass::setCodigo(const QString &value)
 {
     codigo = value;
 }
-
-bool EnfermeraClass::getCondicion() const
-{
-    return condicion;
-}
-
-void EnfermeraClass::setCondicion(bool value)
-{
-    condicion = value;
-}
 EnfermeraClass::EnfermeraClass()
 {
     
@@ -52,7 +42,6 @@ EnfermeraClass::EnfermeraClass(QString codigo,QString nombre,QString apellidos,Q
     this->codigo = codigo;
     this->sueldo = sueldo;
     this->horasTrabajo = horasTrabajo;
-    this->condicion = true;
 }
 
 EnfermeraClass::~EnfermeraClass()

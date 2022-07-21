@@ -10,7 +10,6 @@ private:
     QString nombre;
     QString direccion;
     bool estado;
-    bool condicion;
     //ListaDoctoresClass *listaDoctores;
     //ListaEnfermerasClass *listaEnfermeras;
     //ListaPacientesClass *listaPacientes;
@@ -26,8 +25,6 @@ public:
     bool getEstado() const;
     void setEstado(bool value);
     LocalClass(QString codigo,QString nombre, QString direccion, bool estado);
-    bool getCondicion() const;
-    void setCondicion(bool value);
 };
 
 #endif // LOCALCLASS_H

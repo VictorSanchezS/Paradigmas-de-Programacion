@@ -8,7 +8,6 @@ private:
     QString codigo;
     double sueldo;
     int horasTrabajo;
-    bool condicion;
 public:
     EnfermeraClass();
     ~EnfermeraClass();
@@ -19,8 +18,6 @@ public:
     QString getCodigo() const;
     void setCodigo(const QString &value);
     EnfermeraClass(QString codigo, QString nombre, QString apellidos, QString dni, QString direccion, QString telefono, bool genero, QString fechaNacimiento, double sueldo, int horasTrabajo);
-    bool getCondicion() const;
-    void setCondicion(bool value);
 };
 
 #endif // ENFERMERACLASS_H

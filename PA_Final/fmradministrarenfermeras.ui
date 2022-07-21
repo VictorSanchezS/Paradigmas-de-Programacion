@@ -6,19 +6,35 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>706</width>
+    <width>875</width>
     <height>551</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Adminitracion de Enfermeras</string>
   </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Dni de enfermera :</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
   <widget class="QTableWidget" name="twEnfermeras">
    <property name="geometry">
     <rect>
-     <x>40</x>
+     <x>20</x>
      <y>60</y>
-     <width>621</width>
+     <width>801</width>
      <height>421</height>
     </rect>
    </property>
@@ -43,84 +59,93 @@
     </property>
    </column>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QPushButton" name="cmdMostrarTodos">
    <property name="geometry">
     <rect>
-     <x>39</x>
-     <y>500</y>
-     <width>621</width>
-     <height>25</height>
-    </rect>
-   </property>
-   <layout class="QHBoxLayout" name="horizontalLayout">
-    <item>
-     <widget class="QPushButton" name="cmdAgregarEnfermera">
-      <property name="text">
-       <string>Agregar Enfermera</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="cmdActualizarEnfermera">
-      <property name="text">
-       <string>Actualizar Enfermera</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="cmdEliminarEnfermera">
-      <property name="text">
-       <string>Eliminar Enfermera</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="cmdCerrar">
-      <property name="text">
-       <string>Cerrar</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QWidget" name="">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
+     <x>662</x>
      <y>20</y>
-     <width>621</width>
-     <height>25</height>
+     <width>161</width>
+     <height>21</height>
     </rect>
    </property>
-   <layout class="QHBoxLayout" name="horizontalLayout_2">
-    <item>
-     <widget class="QLabel" name="label">
-      <property name="text">
-       <string>Dni de enfermera :</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLineEdit" name="txtDni"/>
-    </item>
-    <item>
-     <widget class="QPushButton" name="cmdBuscar">
-      <property name="text">
-       <string>&amp;Buscar</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="cmdMostrarTodos">
-      <property name="text">
-       <string>Mostrar todos</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
+   <property name="text">
+    <string>Mostrar todos</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdActualizarEnfermera">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>500</y>
+     <width>181</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Actualizar Enfermera</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtDni">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>20</y>
+     <width>321</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdEliminarEnfermera">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>500</y>
+     <width>181</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Eliminar Enfermera</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdBuscar">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>20</y>
+     <width>181</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&amp;Buscar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdCerrar">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>500</y>
+     <width>181</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cerrar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdAgregarEnfermera">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>500</y>
+     <width>181</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Agregar Enfermera</string>
+   </property>
   </widget>
  </widget>
  <resources/>
