@@ -66,10 +66,11 @@ void FmrAdministrarLocales::listadoLocales(ListaLocalesClass *listaLocales){
     aux  = listaLocales->getCab();
     int x = 0;
     while(aux != NULL){
-        //if(aux->getLocal()->getEstado() == true)
-        this->mostraFila(x,aux);
+        if(aux->getLocal()->getCondicion() == true){
+            this->mostraFila(x,aux);
+            x++;
+        }
         aux = aux->getSgte();
-        x++;
     }
 }
 
@@ -132,5 +133,20 @@ void FmrAdministrarLocales::on_cmdTodos_clicked()
 
 void FmrAdministrarLocales::on_cmdEliminar_clicked()
 {
-
+    if(ui->twLocales->currentIndex().isValid()){
+        QMessageBox::StandardButton respuestaButton;
+        respuestaButton = QMessageBox::question(this,"Eliminar Local","¿Está seguro?",QMessageBox::Yes | QMessageBox::Cancel);
+        if(respuestaButton == QMessageBox::Yes){
+            LocalClass *localEliminado = new LocalClass();
+            localEliminado = this->selecionarLocal(ui->twLocales->item(ui->twLocales->currentRow(),0)->text());
+            localEliminado->setCondicion(false);
+            this->listadoLocales(this->listaLocales);
+        }
+        else{
+            return;
+        }
+    }
+    else{
+        QMessageBox::critical( this, "", "Debe Seleccionar un Local");
+    }
 }

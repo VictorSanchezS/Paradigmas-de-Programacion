@@ -41,9 +41,9 @@ void FmrNewLocal::on_cmdGrabar_clicked()
     // Datos del formulario
     QString nombre = this->ui->txtNombre->text();
     QString direccion = this->ui->teDireccion->toPlainText();
-    bool estado = this->ui->rbHabilitado->isChecked();
+    bool estado = true;
     // Creación de la nueva instancia
-    LocalClass *local = new LocalClass(codigo,nombre, direccion, estado);
+    LocalClass *local = new LocalClass(codigo,nombre, direccion,estado);
 
     this->listaLocales->insertarLocal(local);
 

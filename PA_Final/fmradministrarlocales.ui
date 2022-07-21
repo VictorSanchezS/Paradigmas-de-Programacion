@@ -6,55 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>859</width>
+    <width>684</width>
     <height>554</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Gestion de Locales</string>
   </property>
-  <widget class="QLineEdit" name="txtNombre">
-   <property name="geometry">
-    <rect>
-     <x>158</x>
-     <y>30</y>
-     <width>321</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>28</x>
-     <y>30</y>
-     <width>121</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Nombre del Local :</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="cmdCerrar">
-   <property name="geometry">
-    <rect>
-     <x>648</x>
-     <y>510</y>
-     <width>181</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Cerrar</string>
-   </property>
-  </widget>
   <widget class="QTableWidget" name="twLocales">
    <property name="geometry">
     <rect>
      <x>28</x>
      <y>70</y>
-     <width>801</width>
+     <width>621</width>
      <height>421</height>
     </rect>
    </property>
@@ -79,70 +43,81 @@
     </property>
    </column>
   </widget>
-  <widget class="QPushButton" name="cmdActualizar">
+  <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>218</x>
-     <y>510</y>
-     <width>181</width>
-     <height>21</height>
+     <x>28</x>
+     <y>30</y>
+     <width>621</width>
+     <height>25</height>
     </rect>
    </property>
-   <property name="text">
-    <string>Actualizar Local</string>
-   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Nombre del Local :</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="txtNombre"/>
+    </item>
+    <item>
+     <widget class="QPushButton" name="cmdBuscar">
+      <property name="text">
+       <string>&amp;Buscar</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="cmdTodos">
+      <property name="text">
+       <string>Mostrar todos</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
-  <widget class="QPushButton" name="cmdAgregarLocal">
+  <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
      <x>28</x>
      <y>510</y>
-     <width>181</width>
-     <height>21</height>
+     <width>621</width>
+     <height>25</height>
     </rect>
    </property>
-   <property name="text">
-    <string>Agregar Local</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="cmdEliminar">
-   <property name="geometry">
-    <rect>
-     <x>408</x>
-     <y>510</y>
-     <width>181</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Eliminar Local</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="cmdBuscar">
-   <property name="geometry">
-    <rect>
-     <x>488</x>
-     <y>30</y>
-     <width>181</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>&amp;Buscar</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="cmdTodos">
-   <property name="geometry">
-    <rect>
-     <x>670</x>
-     <y>30</y>
-     <width>161</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Mostrar todos</string>
-   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QPushButton" name="cmdAgregarLocal">
+      <property name="text">
+       <string>Agregar Local</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="cmdActualizar">
+      <property name="text">
+       <string>Actualizar Local</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="cmdEliminar">
+      <property name="text">
+       <string>Eliminar Local</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="cmdCerrar">
+      <property name="text">
+       <string>Cerrar</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>

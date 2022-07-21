@@ -58,6 +58,11 @@
      <string>Sueldo</string>
     </property>
    </column>
+   <column>
+    <property name="text">
+     <string>Dni</string>
+    </property>
+   </column>
   </widget>
   <widget class="QPushButton" name="cmdMostrarTodos">
    <property name="geometry">

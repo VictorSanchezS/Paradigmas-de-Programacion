@@ -13,7 +13,8 @@ FmrAdministrarEnfermeras::FmrAdministrarEnfermeras(QWidget *parent) :
     ui->twEnfermeras->setColumnWidth(0,80);
     ui->twEnfermeras->setColumnWidth(1,220);
     ui->twEnfermeras->setColumnWidth(2,220);
-    ui->twEnfermeras->setColumnWidth(3,100);
+    ui->twEnfermeras->setColumnWidth(3,120);
+    ui->twEnfermeras->setColumnWidth(4,150);
 }
 
 FmrAdministrarEnfermeras::~FmrAdministrarEnfermeras()
@@ -52,7 +53,7 @@ void FmrAdministrarEnfermeras::mostrarFilaEnfermeras(int x, NodoEnfermeraClass *
     ui->twEnfermeras->setItem(x,1,new QTableWidgetItem(aux->getEnfermera()->getNombre()));
     ui->twEnfermeras->setItem(x,2,new QTableWidgetItem(aux->getEnfermera()->getApellidos()));
     ui->twEnfermeras->setItem(x,3,new QTableWidgetItem(QString::number(aux->getEnfermera()->getSueldo())));
-
+    ui->twEnfermeras->setItem(x,4,new QTableWidgetItem(aux->getEnfermera()->getDni()));
 }
 
 
@@ -62,9 +63,11 @@ void FmrAdministrarEnfermeras::listadoEnfermeras(ListaEnfermeras *listaEnfermera
     aux = listaEnfermeras->getCab();
     int x = 0;
     while(aux != NULL){
-        this->mostrarFilaEnfermeras(x,aux);
+        if(aux->getEnfermera()->getCondicion() == true){
+            this->mostrarFilaEnfermeras(x,aux);
+            x++;
+        }
         aux = aux->getSgte();
-        x++;
     }
 }
 
@@ -121,5 +124,26 @@ void FmrAdministrarEnfermeras::on_cmdActualizarEnfermera_clicked()
     }
     else{
         QMessageBox::critical( this, "", "Debe Seleccionar una enfermera");
+    }
+}
+
+void FmrAdministrarEnfermeras::on_cmdEliminarEnfermera_clicked()
+{
+    if(ui->twEnfermeras->currentIndex().isValid()){
+        QMessageBox::StandardButton respuestaButton;
+        respuestaButton = QMessageBox::question(this,"Eliminar Enfermera","¿Está seguro?",QMessageBox::Yes | QMessageBox::Cancel);
+        if(respuestaButton == QMessageBox::Yes){
+            EnfermeraClass *enfermeraEliminado = new EnfermeraClass();
+            enfermeraEliminado = this->selecionarEnfermera(ui->twEnfermeras->item(ui->twEnfermeras->currentRow(),0)->text());
+            enfermeraEliminado->setCondicion(false);
+            this->listadoEnfermeras(this->listaEnfermeras);
+        }
+        else{
+            return;
+        }
+
+    }
+    else{
+        QMessageBox::critical( this, "", "Debe Seleccionar un producto");
     }
 }

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>516</width>
-    <height>239</height>
+    <height>197</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <property name="geometry">
     <rect>
      <x>60</x>
-     <y>180</y>
+     <y>150</y>
      <width>181</width>
      <height>21</height>
     </rect>
@@ -30,7 +30,7 @@
    <property name="geometry">
     <rect>
      <x>280</x>
-     <y>180</y>
+     <y>150</y>
      <width>181</width>
      <height>21</height>
     </rect>
@@ -73,48 +73,6 @@
    </property>
    <property name="text">
     <string>Direccion :</string>
-   </property>
-  </widget>
-  <widget class="QRadioButton" name="rbHabilitado">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>130</y>
-     <width>84</width>
-     <height>19</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Habilitado</string>
-   </property>
-   <property name="checked">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QRadioButton" name="rbDeshabilitado">
-   <property name="geometry">
-    <rect>
-     <x>250</x>
-     <y>130</y>
-     <width>84</width>
-     <height>19</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Deshabilitado</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>70</x>
-     <y>130</y>
-     <width>47</width>
-     <height>13</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Estado :</string>
    </property>
   </widget>
   <widget class="QTextEdit" name="teDireccion">
