@@ -4,6 +4,8 @@
 #include "fmradministrarenfermeras.h"
 #include "frmadministrardoctores.h"
 #include "fmradministrarpaciente.h"
+#include "fmradministraralmacen.h"
+#include "frmadministrarlotes.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -62,4 +64,19 @@ void MainWindow::on_actionAdministrar_Pacientes_triggered()
     fmrAdministrarPaciente->setListaPacientes(this->sistemaVacunacion->getListaPacientes());
     fmrAdministrarPaciente->show();
     fmrAdministrarPaciente->listadoPacientes(this->sistemaVacunacion->getListaPacientes());
+}
+
+void MainWindow::on_actionAdministrar_Almacenes_triggered()
+{
+    FmrAdministrarAlmacen *fmrAdministrarAlmacen= new FmrAdministrarAlmacen;
+    fmrAdministrarAlmacen->setListaAlmacen(this->sistemaVacunacion->getListaAlmacen());
+    fmrAdministrarAlmacen->show();
+}
+
+void MainWindow::on_actionAdministrar_Lotes_de_Vacunas_triggered()
+{
+    FrmAdministrarLotes *frmAdministrarLotes= new FrmAdministrarLotes;
+    frmAdministrarLotes->setListaLotesV(this->sistemaVacunacion->getListaLotesV());
+    frmAdministrarLotes->show();
+    frmAdministrarLotes->listadoLoteV(this->sistemaVacunacion->getListaLotesV());
 }

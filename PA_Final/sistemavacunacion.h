@@ -4,6 +4,8 @@
 #include "listaenfermeras.h"
 #include "listadoctoresclass.h"
 #include "listapacientesclass.h"
+#include "listalotevacunasclass.h"
+#include "listaalmacenclass.h"
 
 
 class SistemaVacunacion
@@ -16,6 +18,8 @@ private:
     ListaEnfermeras *listaEnfermeras;
     listaDoctoresClass *listaDoctores;
     ListaPacientesClass *listaPacientes;
+    ListaLoteVacunasClass *listaLotesV;
+    ListaAlmacenClass *listaAlmacen;
 public:
     SistemaVacunacion();
     ~SistemaVacunacion();
@@ -33,6 +37,10 @@ public:
     void setListaDoctores(listaDoctoresClass *value);
     ListaPacientesClass *getListaPacientes() const;
     void setListaPacientes(ListaPacientesClass *value);
+    ListaLoteVacunasClass *getListaLotesV() const;
+    void setListaLotesV(ListaLoteVacunasClass *value);
+    ListaAlmacenClass *getListaAlmacen() const;
+    void setListaAlmacen(ListaAlmacenClass *value);
 };
 
 #endif // SISTEMAVACUNACION_H
