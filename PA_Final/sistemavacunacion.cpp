@@ -70,26 +70,6 @@ void SistemaVacunacion::setListaPacientes(ListaPacientesClass *value)
 {
     listaPacientes = value;
 }
-
-ListaLoteVacunasClass *SistemaVacunacion::getListaLotesV() const
-{
-    return listaLotesV;
-}
-
-void SistemaVacunacion::setListaLotesV(ListaLoteVacunasClass *value)
-{
-    listaLotesV = value;
-}
-
-ListaAlmacenClass *SistemaVacunacion::getListaAlmacen() const
-{
-    return listaAlmacen;
-}
-
-void SistemaVacunacion::setListaAlmacen(ListaAlmacenClass *value)
-{
-    listaAlmacen = value;
-}
 SistemaVacunacion::SistemaVacunacion()
 {
     this->lider = "Jaime Bravo";

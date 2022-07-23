@@ -28,10 +28,6 @@ private slots:
 
     void on_actionAdministrar_Pacientes_triggered();
 
-    void on_actionAdministrar_Almacenes_triggered();
-
-    void on_actionAdministrar_Lotes_de_Vacunas_triggered();
-
 private:
     Ui::MainWindow *ui;
     SistemaVacunacion *sistemaVacunacion;

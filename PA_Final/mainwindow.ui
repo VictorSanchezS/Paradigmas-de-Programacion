@@ -28,8 +28,6 @@
      <string>Locales</string>
     </property>
     <addaction name="actionAdministrar_Locales"/>
-    <addaction name="actionAdministrar_Almacenes"/>
-    <addaction name="actionAdministrar_Lotes_de_Vacunas"/>
    </widget>
    <widget class="QMenu" name="menuPersonal">
     <property name="title">
@@ -75,16 +73,6 @@
   <action name="actionAdministrar_Pacientes">
    <property name="text">
     <string>Administrar Pacientes...</string>
-   </property>
-  </action>
-  <action name="actionAdministrar_Almacenes">
-   <property name="text">
-    <string>Administrar Almacenes...</string>
-   </property>
-  </action>
-  <action name="actionAdministrar_Lotes_de_Vacunas">
-   <property name="text">
-    <string>Administrar Lotes de Vacunas...</string>
    </property>
   </action>
  </widget>

@@ -39,20 +39,7 @@ SOURCES += main.cpp\
     fmrnewpaciente.cpp \
     listapacientesclass.cpp \
     nodopacienteclass.cpp \
-    paciente.cpp \
-    almacenclass.cpp \
-    fmractualizaralmacen.cpp \
-    fmradministraralmacen.cpp \
-    fmrnewalmacen.cpp \
-    frmactualizarlotes.cpp \
-    frmadministrarlotes.cpp \
-    frmnewlotes.cpp \
-    frmnewvacunas.cpp \
-    listaalmacenclass.cpp \
-    listalotevacunasclass.cpp \
-    lotevacunasclass.cpp \
-    nodoalmacenclass.cpp \
-    nodoloteclass.cpp
+    paciente.cpp
 
 HEADERS  += mainwindow.h \
     fmradministrarlocales.h \
@@ -80,19 +67,7 @@ HEADERS  += mainwindow.h \
     fmrnewpaciente.h \
     listapacientesclass.h \
     nodopacienteclass.h \
-    paciente.h \
-    almacenclass.h \
-    fmractualizaralmacen.h \
-    fmradministraralmacen.h \
-    fmrnewalmacen.h \
-    frmactualizarlotes.h \
-    frmadministrarlotes.h \
-    frmnewlotes.h \
-    listaalmacenclass.h \
-    listalotevacunasclass.h \
-    lotevacunasclass.h \
-    nodoalmacenclass.h \
-    nodoloteclass.h
+    paciente.h
 
 FORMS    += mainwindow.ui \
     fmradministrarlocales.ui \
@@ -106,13 +81,7 @@ FORMS    += mainwindow.ui \
     frmnuevodoctor.ui \
     fmractualizarpaciente.ui \
     fmradministrarpaciente.ui \
-    fmrnewpaciente.ui \
-    fmractualizaralmacen.ui \
-    fmradministraralmacen.ui \
-    fmrnewalmacen.ui \
-    frmactualizarlotes.ui \
-    frmadministrarlotes.ui \
-    frmnewlotes.ui
+    fmrnewpaciente.ui
 
 DISTFILES += \
     PA_Final.pro.user
