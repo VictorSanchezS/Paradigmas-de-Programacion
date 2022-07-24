@@ -36,15 +36,8 @@
     <addaction name="actionAdministrar_Enfermeras"/>
     <addaction name="actionAdministrar_Doctores"/>
    </widget>
-   <widget class="QMenu" name="menuPaciente">
-    <property name="title">
-     <string>Paciente</string>
-    </property>
-    <addaction name="actionAdministrar_Pacientes"/>
-   </widget>
    <addaction name="menuLocales"/>
    <addaction name="menuPersonal"/>
-   <addaction name="menuPaciente"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -68,11 +61,6 @@
   <action name="actionAdministrar_Doctores">
    <property name="text">
     <string>Administrar Doctores...</string>
-   </property>
-  </action>
-  <action name="actionAdministrar_Pacientes">
-   <property name="text">
-    <string>Administrar Pacientes...</string>
    </property>
   </action>
  </widget>

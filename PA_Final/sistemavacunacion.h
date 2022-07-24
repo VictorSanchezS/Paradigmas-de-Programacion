@@ -3,7 +3,6 @@
 #include "listalocalesclass.h"
 #include "listaenfermeras.h"
 #include "listadoctoresclass.h"
-#include "listapacientesclass.h"
 
 
 class SistemaVacunacion
@@ -15,7 +14,6 @@ private:
     ListaLocalesClass *listaLocales;
     ListaEnfermeras *listaEnfermeras;
     listaDoctoresClass *listaDoctores;
-    ListaPacientesClass *listaPacientes;
 public:
     SistemaVacunacion();
     ~SistemaVacunacion();
@@ -31,8 +29,6 @@ public:
     void setListaEnfermeras(ListaEnfermeras *value);
     listaDoctoresClass *getListaDoctores() const;
     void setListaDoctores(listaDoctoresClass *value);
-    ListaPacientesClass *getListaPacientes() const;
-    void setListaPacientes(ListaPacientesClass *value);
 };
 
 #endif // SISTEMAVACUNACION_H
