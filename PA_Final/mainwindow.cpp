@@ -3,6 +3,7 @@
 #include "fmradministrarlocales.h"
 #include "fmradministrarenfermeras.h"
 #include "frmadministrardoctores.h"
+#include "fmradministrarpaciente.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -53,4 +54,12 @@ void MainWindow::on_actionAdministrar_Doctores_triggered()
     frmAdministrarDoctor->setListaDoctores(this->sistemaVacunacion->getListaDoctores());
     frmAdministrarDoctor->show();
     frmAdministrarDoctor->listadoDoctores(this->sistemaVacunacion->getListaDoctores());
+}
+
+void MainWindow::on_actionAdministrar_Pacientes_triggered()
+{
+    FmrAdministrarPaciente *fmrAdministrarPaciente = new FmrAdministrarPaciente();
+    fmrAdministrarPaciente->setListaPacientes(this->sistemaVacunacion->getListaPacientes());
+    fmrAdministrarPaciente->show();
+    fmrAdministrarPaciente->listadoPacientes(this->sistemaVacunacion->getListaPacientes());
 }

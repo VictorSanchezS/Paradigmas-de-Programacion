@@ -33,7 +33,13 @@ SOURCES += main.cpp\
     frmadministrardoctores.cpp \
     frmnuevodoctor.cpp \
     listadoctoresclass.cpp \
-    nododoctorclass.cpp
+    nododoctorclass.cpp \
+    fmractualizarpaciente.cpp \
+    fmradministrarpaciente.cpp \
+    fmrnewpaciente.cpp \
+    listapacientesclass.cpp \
+    nodopacienteclass.cpp \
+    paciente.cpp
 
 HEADERS  += mainwindow.h \
     fmradministrarlocales.h \
@@ -55,7 +61,13 @@ HEADERS  += mainwindow.h \
     frmadministrardoctores.h \
     frmnuevodoctor.h \
     listadoctoresclass.h \
-    nododoctorclass.h
+    nododoctorclass.h \
+    fmractualizarpaciente.h \
+    fmradministrarpaciente.h \
+    fmrnewpaciente.h \
+    listapacientesclass.h \
+    nodopacienteclass.h \
+    paciente.h
 
 FORMS    += mainwindow.ui \
     fmradministrarlocales.ui \
@@ -66,7 +78,10 @@ FORMS    += mainwindow.ui \
     fmractualizarenfermera.ui \
     frmactualizardoctor.ui \
     frmadministrardoctores.ui \
-    frmnuevodoctor.ui
+    frmnuevodoctor.ui \
+    fmractualizarpaciente.ui \
+    fmradministrarpaciente.ui \
+    fmrnewpaciente.ui
 
 DISTFILES += \
     PA_Final.pro.user

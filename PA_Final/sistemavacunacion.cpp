@@ -60,6 +60,16 @@ void SistemaVacunacion::setListaDoctores(listaDoctoresClass *value)
 {
     listaDoctores = value;
 }
+
+ListaPacientesClass *SistemaVacunacion::getListaPacientes() const
+{
+    return listaPacientes;
+}
+
+void SistemaVacunacion::setListaPacientes(ListaPacientesClass *value)
+{
+    listaPacientes = value;
+}
 SistemaVacunacion::SistemaVacunacion()
 {
     this->lider = "Jaime Bravo";
@@ -67,6 +77,8 @@ SistemaVacunacion::SistemaVacunacion()
     this->telefono = "123456789";
     this->listaLocales = new ListaLocalesClass();
     this->listaEnfermeras = new ListaEnfermeras();
+    this->listaDoctores = new listaDoctoresClass();
+    this->listaPacientes = new ListaPacientesClass();
 }
 
 SistemaVacunacion::~SistemaVacunacion()
