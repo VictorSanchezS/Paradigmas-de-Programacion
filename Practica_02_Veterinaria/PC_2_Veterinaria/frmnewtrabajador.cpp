@@ -12,3 +12,8 @@ FrmNewTrabajador::~FrmNewTrabajador()
 {
     delete ui;
 }
+
+void FrmNewTrabajador::on_cmdRegistrar_clicked()
+{
+
+}

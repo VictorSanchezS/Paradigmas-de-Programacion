@@ -15,6 +15,9 @@ public:
     explicit FrmNewTrabajador(QWidget *parent = 0);
     ~FrmNewTrabajador();
 
+private slots:
+    void on_cmdRegistrar_clicked();
+
 private:
     Ui::FrmNewTrabajador *ui;
 };
